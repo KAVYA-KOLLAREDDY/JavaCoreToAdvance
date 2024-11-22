@@ -17,7 +17,7 @@ import com.teamproject.hateoaseaxample.entity.Employee;
 import com.teamproject.hateoaseaxample.service.EmployeeService;
 
 @RestController
-
+@RequestMapping("/employees")
 @CrossOrigin(origins = "*")
 public class EmployeeController{
 	

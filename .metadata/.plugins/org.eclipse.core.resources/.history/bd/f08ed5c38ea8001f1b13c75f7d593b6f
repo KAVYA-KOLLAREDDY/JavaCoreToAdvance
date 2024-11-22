@@ -1,0 +1,15 @@
+package one_to_one.dbconnection.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import one_to_one.dbconnection.repository.UserRepository;
+
+@Service
+public class UserService{
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	public User 
+}

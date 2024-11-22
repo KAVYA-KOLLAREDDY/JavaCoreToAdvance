@@ -1,0 +1,14 @@
+package com.teamproject.hateoaseaxample.service;
+
+import org.springframework.stereotype.Service;
+
+import com.teamproject.hateoaseaxample.repository.RolesRepository;
+
+@Service
+public class RolesService{
+	
+	@AutoWired
+	private RolesRepository rolesRepository;
+	
+	public 
+}

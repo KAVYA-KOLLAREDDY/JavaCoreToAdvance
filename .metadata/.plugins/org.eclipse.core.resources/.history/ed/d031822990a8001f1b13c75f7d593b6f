@@ -1,0 +1,9 @@
+package one_to_one.dbconnection.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import one_to_one.dbconnection.entity.User;
+
+public interface UserRepository extends JpaRepository<User,Integer>{
+	
+}

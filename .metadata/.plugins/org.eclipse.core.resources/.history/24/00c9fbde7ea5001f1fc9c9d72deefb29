@@ -1,0 +1,7 @@
+spring.datasource.url=jdbc:sqlserver://localhost:8080;databaseName=sample
+spring.datasource.username=sa
+spring.datasource.password=Chitti@141
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+logging.level.org.springframework=debug

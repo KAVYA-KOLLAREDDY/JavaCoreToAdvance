@@ -1,0 +1,40 @@
+package com.teamproject.hateoaseaxample.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.teamproject.hateoaseaxample.entity.Employee;
+import com.teamproject.hateoaseaxample.repository.RolesRepository;
+
+@Service
+public class RolesService{
+	
+	@AutoWired
+	private RolesRepository rolesRepository;
+	
+	public List<Roles> retriveAllUsers(){
+		 return roleRepository.findAll();	
+		}
+
+		public Employee retriveEmployee(Integer id) {
+			Employee employee= employeeRepository.findById(id).orElse(null);
+			return employee;
+		}
+		public List<Employee> createEmployee(Employee employee) {
+//			return employeeRepository.save(employee);
+			return this.retriveAllEmployees();
+		}
+		
+		public List<Employee> updateEmployee(Employee employee) {
+			employeeRepository.save(employee);
+			return this.retriveAllEmployees();
+		}
+		
+		public List<Employee> deleteEmployee(Integer id) {
+			Employee employee= this.retriveEmployee(id);
+			employeeRepository.delete(employee);
+			return this.retriveAllEmployees();
+		}
+}

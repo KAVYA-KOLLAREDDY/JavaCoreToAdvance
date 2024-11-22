@@ -1,0 +1,37 @@
+package com.teamproject.hateoaseaxample.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.teamproject.hateoaseaxample.entity.Employee;
+import com.teamproject.hateoaseaxample.repository.EmployeeRepository;
+
+public class EmployeeService {
+
+	private EmployeeRepository employeeRepository;
+
+	@Autowired
+	public EmployeeService(EmployeeRepository employeeRepository) {
+
+		this.employeeRepository = employeeRepository;
+	}
+
+	public List<Employee> retriveAllEmployees(){
+	 return employeeRepository.findAll();	
+	}
+
+	public Employee retriveEmployee(Integer id) {
+		Employee employee= employeeRepository.findById(id).orElse(null);
+		return
+		
+	}
+	public Employee createEmployee() {
+		return employeeRepository.
+	}
+	
+	public Employee updateEmployee() {
+		return 
+	}
+}

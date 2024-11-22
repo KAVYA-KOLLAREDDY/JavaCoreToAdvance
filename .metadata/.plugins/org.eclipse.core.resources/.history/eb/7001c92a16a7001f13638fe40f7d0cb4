@@ -1,0 +1,100 @@
+package com.teamproject.hateoaseaxample.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Employee{
+	@Id
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	private int id;
+	private String name;
+	private String email;
+	private double number;
+	private String dateOfJoining;
+	private String gender;
+	private String status;
+	private double salary;
+	public Employee(String name, String email, double number, String dateOfJoining, String gender,
+			String status, double salary) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.number = number;
+		this.dateOfJoining = dateOfJoining;
+		this.gender = gender;
+		this.status = status;
+		this.salary = salary;
+	}
+	public Employee(int id, String name, String email, double number, String date_of_joining, String gender,
+			String status, double salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.number = number;
+		this.date_of_joining = date_of_joining;
+		this.gender = gender;
+		this.status = status;
+		this.salary = salary;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public double getNumber() {
+		return number;
+	}
+	public void setNumber(double number) {
+		this.number = number;
+	}
+	public String getDate_of_joining() {
+		return date_of_joining;
+	}
+	public void setDate_of_joining(String date_of_joining) {
+		this.date_of_joining = date_of_joining;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	@Override
+	public String toString() {
+		return "employee [id=" + id + ", name=" + name + ", email=" + email + ", number=" + number
+				+ ", date_of_joining=" + date_of_joining + ", gender=" + gender + ", status=" + status + ", salary="
+				+ salary + "]";
+	}
+	
+	
+	
+}

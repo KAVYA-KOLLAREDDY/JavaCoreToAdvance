@@ -1,0 +1,22 @@
+package com.teamproject.hateoaseaxample.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.teamproject.hateoaseaxample.Employee;
+import com.teamproject.hateoaseaxample.service.EmployeeService;
+
+@RestController
+public class EmployeeController{
+	@Autowired
+	private EmployeeService empService;
+	
+	@GetMapping("/employees")
+	public List<Employee> getEmployees(){
+		return EmployeeService.
+	}
+	
+}

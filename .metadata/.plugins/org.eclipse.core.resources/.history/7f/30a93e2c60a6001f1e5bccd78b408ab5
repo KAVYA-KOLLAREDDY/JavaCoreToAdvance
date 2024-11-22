@@ -1,0 +1,10 @@
+package com.teamproject.hateoaseaxample.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class employee{
+	@id
+	private
+	
+}

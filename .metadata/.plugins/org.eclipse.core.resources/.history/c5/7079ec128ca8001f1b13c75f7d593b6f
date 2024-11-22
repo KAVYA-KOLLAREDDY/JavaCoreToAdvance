@@ -1,0 +1,10 @@
+package one_to_one.dbconnection.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class user{
+	private int id;
+	private String name;
+	private 
+}

@@ -1,0 +1,20 @@
+package com.teamproject.hateoaseaxample.service;
+
+import org.hibernate.mapping.List;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.teamproject.hateoaseaxample.repository.EmployeeRepository;
+
+public class EmployeeService {
+	
+	private EmployeeRepository employeeRepository;
+	@Autowired
+	public EmployeeService(EmployeeRepository employeeRepository) {
+		
+		this.employeeRepository=employeeRepository;
+	}
+	public List<employee> getRetriveAll(){
+	 return employeeRepository.findAll();	
+	}
+
+}
